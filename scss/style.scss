@@ -1,0 +1,227 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+header#hero {
+	@include linear-gradient;
+  @include background-size(cover);
+	background-position: center bottom;
+	background-attachment: fixed;
+  height: 60vh;
+  text-align: center;
+
+  	h1 {
+  		font-family: $main;
+  		font-size: 48px;
+  		color: $white;
+  		margin-top: 13vh;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  	}
+
+  	h4 {
+  		font-family: $main;
+  		font-size: 22px;
+  		color: $white;
+  		margin: 10px 0 20px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  	}
+
+    input {
+      width: 250px;
+      margin-right: 20px;
+      height: 40px;
+      font-family: $main;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+
+    select.styled {
+      height: 40px;
+      width: 150px;
+      border-radius: 0px;
+      font-family: $main;
+      font-size: 18px;
+      padding-left: 10px;
+      margin-right: 20px;
+    }
+
+    .btn {
+      border-radius: 0px;
+      font-family: $main;
+      font-size: 18px;
+      height: 40px;
+      background-color: transparent;
+      border: 3px solid $white;
+      color: $white;
+      transition: all 200ms ease;
+
+        &:hover {
+          background-color: $blue;
+          border: 3px solid $blue;
+        }
+    }
+
+}
+
+.member-berries {
+  margin-bottom: 75px;
+
+  .memory {
+    background-color: $white;
+    border-right: 20px solid $white; /* Yeah, bit of a hack here I know */
+    border-left: 20px solid $white; /* See above. */
+    margin-top: 20px;
+    padding: 0;
+
+    p.rentbuy {
+      font-family: $main;
+      color: $white;
+      font-size: 16px;
+      padding: 10px 10px;
+
+        span {
+          background-color: $blue;
+          padding: 3px 13px;
+        }
+    }
+
+    .icons {
+      float: right;
+      padding: 5px 5px 0 0;
+      /*display: none; SEE NOTES IN JS FILE*/
+
+      a.memory-edit {
+        margin: 0;
+        font-size: 18px;
+        padding-right: 10px;
+
+          .fa-pencil {
+            color: $grey;
+            opacity: 0.3;
+
+            &:hover{
+              color: $blue;
+              opacity: 1;
+            }
+          }
+      }
+
+      a.memory-delete {
+        margin: 0;
+        font-size: 18px;
+        padding-right: 10px;
+
+          .fa-trash {
+            color: $grey;
+            opacity: 0.3;
+
+            &:hover{
+              color: $blue;
+              opacity: 1;
+            }
+          }
+      }
+    }
+
+      p.object-name {
+        color: $blue;
+        font-family: $secondary;
+        font-size: 32px;
+        margin: 10px 0 0;
+        padding: 0 10px;
+      }
+
+      p.object-url {
+        color: $grey;
+        font-family: $main;
+        font-size: 18px;
+        margin-top: -7px;
+        padding: 0 10px;
+      }
+  }
+}
+
+.object-container {
+  background-color: $white;
+  margin-top: -50px;
+  text-align: center;
+  padding: 15px 0 20px;
+
+    h2 {
+      font-family: $main;
+      color: $black;
+      font-size: 28px;
+    }
+}
+
+.input-box {
+  display: none;
+  width: 80%;
+  padding: 0px 10px;
+
+    input {
+      margin: 7px 0 10px;
+    }
+}
+
+footer#site-footer {
+  background: $black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+    p {
+      color: $white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    a#footer {
+      text-decoration: none;
+      color: $white;
+    }
+}
+
+
+/* IT'S 2017, YOU'RE DAMN RIGHT IT'S MOBILE-ISH FRIENDLY */
+
+@media screen and (max-width: $mobile) {
+
+header#hero {
+  height: auto;
+  padding-bottom: 50px;
+
+  input {
+    margin-bottom: 10px;
+    margin-right: 0px;
+    width: 80%;
+  }
+
+  select.styled {
+    margin-bottom: 10px;
+    margin-right: 0px;
+    width: 80%;
+    }
+
+  .btn {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+}
+
+.object-container {
+  background-color: $black;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+
+    h2 {
+      font-family: $main;
+      color: $white;
+      font-size: 24px;
+      padding: 10px 10px;
+      margin: 0;
+    }
+}
+
+}

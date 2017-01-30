@@ -1,0 +1,173 @@
+/* SCREEN SIZE BREAK POINTS */
+/* COLORS */
+/* FONTS */
+/* MIXINS */
+header#hero {
+  background: -moz-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/hero.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(100%, rgba(0, 0, 0, 0.95))), url(../images/hero.jpg) no-repeat;
+  background: -webkit-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/hero.jpg) no-repeat;
+  background: -o-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/hero.jpg) no-repeat;
+  background: -ms-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/hero.jpg) no-repeat;
+  background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/hero.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  height: 60vh;
+  text-align: center; }
+  header#hero h1 {
+    font-family: "Rokkitt", serif;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 13vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  header#hero h4 {
+    font-family: "Rokkitt", serif;
+    font-size: 22px;
+    color: #fff;
+    margin: 10px 0 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  header#hero input {
+    width: 250px;
+    margin-right: 20px;
+    height: 40px;
+    font-family: "Rokkitt", serif;
+    font-size: 18px;
+    padding-left: 10px; }
+  header#hero select.styled {
+    height: 40px;
+    width: 150px;
+    border-radius: 0px;
+    font-family: "Rokkitt", serif;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-right: 20px; }
+  header#hero .btn {
+    border-radius: 0px;
+    font-family: "Rokkitt", serif;
+    font-size: 18px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    transition: all 200ms ease; }
+    header#hero .btn:hover {
+      background-color: #77ACC6;
+      border: 3px solid #77ACC6; }
+
+.member-berries {
+  margin-bottom: 75px; }
+  .member-berries .memory {
+    background-color: #fff;
+    border-right: 20px solid #fff;
+    /* Yeah, bit of a hack here I know */
+    border-left: 20px solid #fff;
+    /* See above. */
+    margin-top: 20px;
+    padding: 0; }
+    .member-berries .memory p.rentbuy {
+      font-family: "Rokkitt", serif;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 10px; }
+      .member-berries .memory p.rentbuy span {
+        background-color: #77ACC6;
+        padding: 3px 13px; }
+    .member-berries .memory .icons {
+      float: right;
+      padding: 5px 5px 0 0;
+      /*display: none; SEE NOTES IN JS FILE*/ }
+      .member-berries .memory .icons a.memory-edit {
+        margin: 0;
+        font-size: 18px;
+        padding-right: 10px; }
+        .member-berries .memory .icons a.memory-edit .fa-pencil {
+          color: #adacac;
+          opacity: 0.3; }
+          .member-berries .memory .icons a.memory-edit .fa-pencil:hover {
+            color: #77ACC6;
+            opacity: 1; }
+      .member-berries .memory .icons a.memory-delete {
+        margin: 0;
+        font-size: 18px;
+        padding-right: 10px; }
+        .member-berries .memory .icons a.memory-delete .fa-trash {
+          color: #adacac;
+          opacity: 0.3; }
+          .member-berries .memory .icons a.memory-delete .fa-trash:hover {
+            color: #77ACC6;
+            opacity: 1; }
+    .member-berries .memory p.object-name {
+      color: #77ACC6;
+      font-family: "Passion One", cursive;
+      font-size: 32px;
+      margin: 10px 0 0;
+      padding: 0 10px; }
+    .member-berries .memory p.object-url {
+      color: #adacac;
+      font-family: "Rokkitt", serif;
+      font-size: 18px;
+      margin-top: -7px;
+      padding: 0 10px; }
+
+.object-container {
+  background-color: #fff;
+  margin-top: -50px;
+  text-align: center;
+  padding: 15px 0 20px; }
+  .object-container h2 {
+    font-family: "Rokkitt", serif;
+    color: #1e1e1e;
+    font-size: 28px; }
+
+.input-box {
+  display: none;
+  width: 80%;
+  padding: 0px 10px; }
+  .input-box input {
+    margin: 7px 0 10px; }
+
+footer#site-footer {
+  background: #1e1e1e;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer#site-footer p {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; }
+  footer#site-footer a#footer {
+    text-decoration: none;
+    color: #fff; }
+
+/* IT'S 2017, YOU'RE DAMN RIGHT IT'S MOBILE-ISH FRIENDLY */
+@media screen and (max-width: 768px) {
+  header#hero {
+    height: auto;
+    padding-bottom: 50px; }
+    header#hero input {
+      margin-bottom: 10px;
+      margin-right: 0px;
+      width: 80%; }
+    header#hero select.styled {
+      margin-bottom: 10px;
+      margin-right: 0px;
+      width: 80%; }
+    header#hero .btn {
+      width: 80%;
+      padding-bottom: 20px; }
+
+  .object-container {
+    background-color: #1e1e1e;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; }
+    .object-container h2 {
+      font-family: "Rokkitt", serif;
+      color: #fff;
+      font-size: 24px;
+      padding: 10px 10px;
+      margin: 0; } }
