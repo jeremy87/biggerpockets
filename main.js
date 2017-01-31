@@ -60,7 +60,7 @@ $(document).on('click', '.memory-delete', function() {
 //EDIT PROPERTY NAME WITH PENCIL ICON IS CLICKED
 $(document).on('click', '.memory-edit', function() {
 
-  var parent = $(this).parent('div.icons').parent('div.memory');
+  var parent = $(this).parents('div.memory');
   if($(this).hasClass('memory')) {
     parent = this;
   } 
@@ -72,7 +72,7 @@ $(document).on('click', '.memory-edit', function() {
 
 $(document).on('blur','.memory', function(){
     var name = $(this).find('input').val();
-    var parent = $(this).parent('div.icons').parent('div.memory');
+    var parent = $(this).parents('div.memory');
       if($(this).hasClass('memory')) {
         parent = this;
       }
