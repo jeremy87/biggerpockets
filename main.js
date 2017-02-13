@@ -22,7 +22,7 @@ $(document).ready(function(){
         '<div class="col-lg-4 memory">' + 
         '<img src="'+ randomImage + '" width="100%">' +
         '<div class="icons"><a class="memory-edit" src="#"><i class="fa fa-pencil"></i></a><a class="memory-delete" src="#"><i class="fa fa-trash"></i></a></div>' + 
-        '<p class="rentbuy"><span>' + rentBuy + '</span></p>' +
+        '<p class="rentbuy"><span class="rentbuy">' + rentBuy + '</span></p>' +
         '<p class="object-name">' + objectName + '</p>' + 
         '<span class="input-box"><input></input></span>' + 
         '<p class="object-url">' + objectUrl + '</p>' + 
@@ -30,6 +30,12 @@ $(document).ready(function(){
       } else {
         alert("Please fill in the fields");
       }
+
+      if(rentBuy === 'Rent') {
+        $('span.rentbuy').css('background-color', '#77acc6');
+      } else {
+        $('span.rentbuy').css('background-color', '#ee7b3c');
+    }
 	});
 
   $('#object-name, #object-url, #rentbuy').keypress(function(e){

@@ -78,7 +78,7 @@ header#hero {
       font-size: 16px;
       padding: 10px 10px;
 
-        span {
+        span.rentbuy {
           background-color: $blue;
           padding: 3px 13px;
         }
@@ -165,14 +165,14 @@ header#hero {
 
 footer#site-footer {
   background: $black;
-  text-align: center;
+  text-align: left;
   position: fixed;
   bottom: 0;
   width: 100%;
 
     p {
       color: $white;
-      text-align: center;
+      text-align: left;
       padding: 10px 0;
     }
 
